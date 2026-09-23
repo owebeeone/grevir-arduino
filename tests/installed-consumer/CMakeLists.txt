@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+project(grevir_arduino_consumer LANGUAGES CXX)
+find_package(grevir-arduino CONFIG REQUIRED)
+add_executable(grevir_arduino_consumer main.cpp)
+target_link_libraries(grevir_arduino_consumer PRIVATE grevir::arduino)
+target_compile_definitions(grevir_arduino_consumer PRIVATE GREVIR_ARDUINO_HOST_MOCK)
+set_target_properties(grevir_arduino_consumer PROPERTIES CXX_EXTENSIONS OFF)
