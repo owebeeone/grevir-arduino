@@ -1,5 +1,15 @@
 # Grevir Arduino
 
+**Public API:** [Grevir Arduino](https://github.com/owebeeone/grevir-wz/blob/main/docs/api/arduino.md).
+See [installation](https://github.com/owebeeone/grevir-wz/blob/main/docs/install.md) and
+[supported platforms](https://github.com/owebeeone/grevir-wz/blob/main/docs/supported.md).
+The workspace `/docs` is the current user-facing contract; development
+checkpoints below are historical.
+
+Common Arduino GPIO, clock, Serial and PWM adapters.
+
+## Development record (historical)
+
 Arduino CoreIF, pin aliases, Serial and PWM adapters for Grevir. EEPROM is a
 separate header and is not pulled in by `GrevirArduino.h`.
 
