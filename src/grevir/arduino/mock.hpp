@@ -107,6 +107,10 @@ public:
     print("\n");
   }
 
+  void println() {
+    print("\n");
+  }
+
   int available() {
     return 0;
   }
